@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website about Soham Chatterjee</title>
+    <style>
+        body {
+            background-image: url('wallp1.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            transition: background-color 0.5s ease;
+            height: 100vh;
+        }
+
+        body.light-mode {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        body.dark-mode {
+            background-color: #111;
+            color: #fff;
+        }
+
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
+        .semi-transparent-box {
+            background-color: rgba(255, 255, 255, 0.5);
+            /* Black semi-transparent box */
+            color: #000;
+            /* White text in the box */
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        body.dark-mode .semi-transparent-box {
+            background-color: rgba(0, 0, 0, 0.5);
+            /* White semi-transparent box */
+            color: #fff;
+            /* Black text color */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark-mode header,
+        body.dark-mode section {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        body.dark-mode header h1 {
+            color: #fff;
+        }
+
+        nav {
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #555;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        img {
+            border-radius: 50%;
+            max-width: 200px;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        div a {
+            margin: 0 15px;
+        }
+        
+
+    </style>
+
+    <script>
+        function openBlog(blogId) {
+            window.open('blog.html?id=' + blogId, '_blank');
+        }
+
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function openBlogPage() {
+            window.open('blog.html', '_blank');
+        }
+
+        function toggleMode() {
+            const body = document.body;
+            body.classList.toggle('light-mode');
+            body.classList.toggle('dark-mode');
+            if(body.classList.contains('dark-mode')) {
+                document.getElementById('semi-transparent-box').style.color = '#fff';
+            }
+            else {
+                document.getElementById('semi-transparent-box').style.color = '#000';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            function scrollToCenter(sectionId) {
+                const section = document.getElementById(sectionId);
+                const windowHeight = window.innerHeight;
+                const sectionHeight = section.clientHeight;
+                const offset = (windowHeight - sectionHeight) / 2;
+                window.scrollTo({
+                    top: section.offsetTop - offset,
+                    behavior: 'smooth'
+                });
+            }
+
+            document.getElementById('aboutSectionLink').addEventListener('click', function () {
+                scrollToCenter('aboutSection');
+            });
+
+            document.getElementById('educationSectionLink').addEventListener('click', function () {
+                scrollToCenter('educationSection');
+            });
+
+            document.getElementById('achievementsSectionLink').addEventListener('click', function () {
+                scrollToCenter('achievementsSection');
+            });
+
+            document.getElementById('skillsSectionLink').addEventListener('click', function () {
+                scrollToCenter('skillsSection');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header id="semi-transparent-box" class="semi-transparent-box">
+        <h1>Soham Chatterjee</h1>
+        <p>About Me - From North-West to North-East</p>
+        <img src="Subject.png" alt="Soham Chatterjee">
+        <button id="toggleModeButton" onclick="toggleMode()">Toggle Mode</button>
+    </header>
+
+    <div>
+        <a href="https://github.com/GrandsonOfBuddha" target="_blank" title="GitHub">
+            <img src="github-icon.png" alt="GitHub Icon" width="50" height="50">
+        </a>
+        <a href="soham.chatterjee@students.iiit.ac.in" title="Email">
+            <img src="email-icon.png" alt="Email Icon" width="50" height="50">
+        </a>
+        <a href="https://www.instagram.com/chatteryee/" target="_blank" title="Instagram">
+            <img src="instagram-icon.png" alt="Instagram Icon" width="50" height="50">
+        </a>
+        <!-- Add more social icons as needed -->
+    </div>
+
+    <nav>
+        <a href="javascript:void(0);" id="aboutSectionLink">About Yourself</a>
+        <a href="javascript:void(0);" id="educationSectionLink">Education</a>
+        <a href="javascript:void(0);" id="achievementsSectionLink">Achievements</a>
+        <a href="javascript:void(0);" id="skillsSectionLink">Skills</a>
+        <a href="blog1.html" target="_blank">Blog 1</a>
+        <a href="blog2.html" target="_blank">Blog 2</a>
+        <a href="resume.pdf" class="resume-link" target="_blank">Resume</a>
+    </nav>
+
+    <section id="aboutSection" style="margin-top: 100vh;">
+        <h2>About Yourself</h2>
+        <p>
+            Hey, I'm Soham Chatterjee. I am from the town named Jalpaiguri in West Bengal, however, I've lived in
+            Hyderabad for my whole life. I like working out, reading manga, watching anime, and playing basketball every
+            now and then.
+        </p>
+    </section>
+
+    <section id="educationSection" style="margin-top: 100vh;">
+        <h2>Education Background</h2>
+        <ul>
+            <li><strong>College(and grad year): IIIT Hyderabad, 2027</strong></li>
+            <li><strong>School(and grad year): CHIREC INTERNATIONAL SCHOOL, 2023</strong></li>
+        </ul>
+    </section>
+
+    <section id="achievementsSection" style="margin-top: 100vh;">
+        <h2>Achievements</h2>
+        <ul>
+            <li><strong>Grade 8 completed in Classical Piano</strong> - 2016</li>
+            <li><strong>1540 score in the SAT</strong> - March 11, 2023</li>
+        </ul>
+    </section>
+
+    <section id="skillsSection" style="margin-top: 100vh;margin-bottom: 100vh;">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Can code in C</strong></li>
+            <li><strong>Can create webpages as needed</strong></li>
+            <li><strong>Above average athlete</strong></li>
+        </ul>
+    </section>
+
+</body>
+
+</html>

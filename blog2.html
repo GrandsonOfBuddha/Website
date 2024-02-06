@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Showdown: Naruto vs Goku(BLOG2)</title>
+    <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('ninja-naruto/njnaruto.ttf') format('TrueType');
+            font-weight: normal;
+            font-style: normal;
+
+            /* font-family: 'jjkfont';
+            src: url('jujutsu-kaisen/jjk.ttf') format('TrueType');
+            font-weight: normal;
+            font-style: normal; */
+        }
+
+        @font-face {
+            font-family: 'jjkfont';
+            src: url('jujutsu-kaisen/jjk.ttf') format('TrueType');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background-image: url('1124794.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: 'CustomFont';
+            color: #333;
+            transition: background-color 0.5s ease;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            font-family: 'jjkfont', sans-serif;
+            /* Use jjkfont for headers */
+            color: #333;
+            text-align: center;
+            /* Center the headings */
+            font-size: 2.5em;
+            /* Increase the font size */
+            margin-bottom: 20px;
+            /* Add some space below the headings */
+        }
+
+        p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        nav {
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #555;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        img {
+            border-radius: 50%;
+            max-width: 200px;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .box {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.6);
+            /* Adjust alpha value for transparency */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body.light-mode {
+            background-color: #f5f5f5;
+            color: #000;
+        }
+
+        body.dark-mode {
+            background-color: #111;
+            color: #fff;
+        }
+
+        body.light-mode section,
+        body.light-mode header {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+        }
+
+        body.dark-mode section,
+        body.dark-mode header {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        body.light-mode h1,
+        body.light-mode h2,
+        body.light-mode p {
+            color: #000;
+        }
+
+        body.dark-mode h1,
+        body.dark-mode h2,
+        body.dark-mode p {
+            color: #fff;
+        }
+
+        /* Add styles for comments section */
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .comments ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 0.9em;
+            /* Adjust the font size for comments */
+        }
+
+        .content-container {
+            width: 50%;
+            /* Set the width to about one third of the page */
+            margin: 0 auto;
+            /* Center the container horizontally */
+            padding: 20px;
+            /* Add some padding */
+            box-sizing: border-box;
+            /* Include padding in the width calculation */
+        }
+    </style>
+</head>
+
+<body class="light-mode">
+    <button id="toggleModeButton" onclick="toggleMode()">Toggle Mode</button>
+    <div>
+        <section>
+            <h1>The Ultimate Showdown: Naruto vs Goku(BLOG2)</h1>
+
+            <p>Hey anime enthusiasts, it's time to dive into the age-old debate: Naruto vs Goku. Brace yourselves for a
+                clash
+                of titans, each with their own set of powerful phrases and techniques that have echoed through the anime
+                cosmos.</p>
+            <p>Naruto, the ninja with a dream to become the Hokage, and Goku, the Saiyan warrior destined for greatness,
+                have captivated fans with their incredible journeys. The battleground is set, and the sparks are about
+                to
+                fly.</p>
+            <p>Picture this: Naruto shouting "SASUKEEEE!" in the heat of battle. It's not just a call to his comrade;
+                it's a
+                declaration of unwavering friendship and a promise to bring back a lost brother from the depths of
+                darkness.
+            </p>
+            <p>On the other side, Goku charges up his energy, and the famous phrase "It's over 9000!" resonates. It's
+                not
+                just
+                a power level; it's a cultural phenomenon that symbolizes the sheer magnitude of Goku's strength,
+                leaving
+                fans in awe.</p>
+            <p>Naruto's journey is one of resilience and growth, with the power of the Nine-Tails within him. "Believe
+                it!"
+                echoes through the Hidden Leaf Village, a testament to Naruto's unwavering determination to never give
+                up,
+                no matter the odds.</p>
+            <p>Goku's path is one of constant evolution, pushing the boundaries of what it means to be a Saiyan warrior.
+                "Kaio-ken!" he shouts, tapping into forbidden techniques to overcome even the most formidable foes.</p>
+            <blockquote class="quote">"In the clash of worlds, Naruto and Goku stand as beacons of hope, embodying the
+                spirit of perseverance and the power of friendship."</blockquote>
+            <p>As the battle rages on, with Rasengans colliding against Kamehamehas, it's not just a fight for
+                supremacy;
+                it's a celebration of the bonds forged through countless trials and tribulations.</p>
+            <h2>The Legacy of Legends</h2>
+            <p>Naruto and Goku aren't just characters in a story; they're symbols of resilience and determination,
+                reminding
+                us that even in the face of adversity, anything is possible with unwavering resolve and the support of
+                friends.</p>
+            <p>So, as we delve into the endless debate of Naruto vs Goku, let's not forget the lessons they impart – the
+                value of friendship, the importance of never giving up, and the belief that with enough determination,
+                even
+                the impossible becomes possible.</p>
+            <p class="highlighted-text">In the end, whether you're a fan of ninjas or Saiyans, one thing's for sure –
+                Naruto
+                and Goku have left an indelible mark on the world of anime, inspiring generations to dream big and reach
+                for
+                the stars.</p>
+            <button id="likeButton2" onclick="like('goku')">Like</button>
+            <span id="likeCount2">0</span> likes
+            <div class="comments">
+                <input type="text" id="commentInput2" placeholder="Write a comment...">
+                <input type="submit" value="Comment" onclick="addComment('goku')">
+                <ul id="commentList2"></ul>
+            </div>
+        </section>
+
+        <!-- JavaScript code -->
+        <script>
+            // Function to toggle light/dark mode
+            function toggleMode() {
+                const body = document.body;
+                body.classList.toggle('light-mode');
+                body.classList.toggle('dark-mode');
+            }
+
+            // Function to increment the like count
+            function like(topic) {
+                const likeCount = document.getElementById(`likeCount${topic === 'sukuna' ? '1' : '2'}`);
+                let count = parseInt(likeCount.textContent);
+                count++;
+                likeCount.textContent = count;
+
+                // Store the updated like count in local storage
+                localStorage.setItem(`likeCount${topic}`, count);
+            }
+
+            // Function to add a comment
+            function addComment(topic) {
+                const commentInput = document.getElementById(`commentInput${topic === 'sukuna' ? '1' : '2'}`);
+                const commentList = document.getElementById(`commentList${topic === 'sukuna' ? '1' : '2'}`);
+                const comment = commentInput.value;
+
+                if (comment.trim() !== '') {
+                    const li = document.createElement('li');
+                    li.textContent = comment;
+                    commentList.appendChild(li);
+
+                    // Store the comment in local storage
+                    let comments = JSON.parse(localStorage.getItem(`comments${topic}`)) || [];
+                    comments.push(comment);
+                    localStorage.setItem(`comments${topic}`, JSON.stringify(comments));
+
+                    // Clear the comment input field
+                    commentInput.value = '';
+                }
+            }
+
+            // Function to load stored data from local storage
+            function loadStoredData(topic) {
+                // Load like count
+                const likeCount = localStorage.getItem(`likeCount${topic}`);
+                if (likeCount !== null) {
+                    document.getElementById(`likeCount${topic === 'sukuna' ? '1' : '2'}`).textContent = likeCount;
+                }
+
+                // Load comments
+                const comments = JSON.parse(localStorage.getItem(`comments${topic}`)) || [];
+                const commentList = document.getElementById(`commentList${topic === 'sukuna' ? '1' : '2'}`);
+                comments.forEach(comment => {
+                    const li = document.createElement('li');
+                    li.textContent = comment;
+                    commentList.appendChild(li);
+                });
+            }
+
+            // Load stored data when the page loads
+            window.onload = function () {
+                loadStoredData('goku');
+            }
+        </script>
+    </div>
+</body>
+
+</html>
